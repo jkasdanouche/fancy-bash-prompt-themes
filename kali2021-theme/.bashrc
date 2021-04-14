@@ -1,6 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+# Most of this configuration was extracted from kali 2021 distribution.
 
 # If not running interactively, don't do anything
 case $- in
@@ -61,7 +59,7 @@ if [ "$color_prompt" = yes ]; then
     # override default virtualenv indicator in prompt
     VIRTUAL_ENV_DISABLE_PROMPT=1
 
-    prompt_color='\[\033[;32m\]'
+    prompt_color='\[\033[;35m\]'
     info_color='\[\033[1;34m\]'
     prompt_symbol=㉿
     if [ "$EUID" -eq 0 ]; then # Change prompt colors for root user
